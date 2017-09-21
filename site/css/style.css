@@ -2,6 +2,50 @@
 @import url(animate.css);
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 @import url(//fonts.googleapis.com/css?family=Roboto:400,500,700);
+
+/*==================  Custom by Brian  ======================*/
+zim-phone {
+    width: 200px;
+    height: 50px;
+    background: red;
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+    animation-name: myfirst;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {background:red; left:0px; top:0px;}
+    5%  {background:yellow; left:50px; top:0px;}
+    10%  {background:blue; left:50px; top:50px;}
+    15%  {background:green; left:0px; top:50px;}
+    20% {background:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {background:red; left:0px; top:0px;}
+    25%  {background:yellow; left:200px; top:0px;}
+    50%  {background:blue; left:200px; top:200px;}
+    75%  {background:green; left:0px; top:200px;}
+    100% {background:red; left:0px; top:0px;}
+}
+
+
 /*========================================================
 					  Main Styles
 =========================================================*/
@@ -21,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #434547;
 }
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-  color: #62bfe6;
+  color: #f5b747;
 }
 
 h1 {
@@ -113,7 +157,7 @@ hr {
 }
 
 .hr {
-  border-bottom: 3px solid #62bfe6;
+  border-bottom: 3px solid #f5b747;
 }
 
 @media (max-width: 767px) {
@@ -231,7 +275,7 @@ p + .btn_wr {
   font-weight: 700;
   font-size: 55px;
   line-height: 62px;
-  color: #5ab7de;
+  color: orange;
   vertical-align: bottom;
 }
 .brand_slogan {
@@ -248,13 +292,13 @@ p + .btn_wr {
 /*==================  Backgrounds  ======================*/
 .bg-primary {
   color: #fff;
-  background: #62bfe6;
+  background: #f5b747;
 }
 .bg-primary h2 {
   color: #fff;
 }
 .bg-primary .icon {
-  color: #62bfe6;
+  color: #f5b747;
   background: #fff;
 }
 .bg-primary .product-list li .box:hover .icon {
@@ -305,7 +349,7 @@ p + .btn_wr {
   font-size: 52px;
   text-align: center;
   color: #fff;
-  background: #62bfe6;
+  background: #f5b747;
   -moz-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   -webkit-transition: 0.3s all ease;
@@ -326,7 +370,7 @@ p + .btn_wr {
   line-height: 70px;
   font-size: 34px;
   text-align: center;
-  color: #62bfe6;
+  color: #f5b747;
   background: #4a4c4d;
 }
 .icon2:before {
@@ -363,11 +407,11 @@ p + .btn_wr {
 
 .btn {
   color: #fff;
-  background: #62bfe6;
+  background: #f5b747;
 }
 
 .btn2 {
-  color: #62bfe6;
+  color: #f5b747;
   background: #eaeaea;
 }
 .btn2:hover, .btn2:active {
@@ -440,7 +484,7 @@ p + .btn_wr {
   padding: 25px 29px 20px;
   float: left;
   color: #fff;
-  background: #62bfe6;
+  background: #f5b747;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -585,7 +629,7 @@ blockquote q:before {
   left: 0;
   padding-right: 7px;
   content: "\f10d";
-  color: #62bfe6;
+  color: #f5b747;
   font-family: "FontAwesome";
   font-size: 34px;
   line-height: 28px;
@@ -595,7 +639,7 @@ blockquote q:before {
 blockquote cite {
   display: block;
   font-size: 16px;
-  color: #62bfe6;
+  color: #f5b747;
 }
 blockquote cite a:hover {
   text-decoration: underline;
@@ -640,7 +684,7 @@ blockquote p + cite {
   padding-bottom: 16px;
   font-size: 16px;
   line-height: 18px;
-  color: #62bfe6;
+  color: #f5b747;
 }
 .marked-list li a:before {
   content: "\f00c";
@@ -684,7 +728,7 @@ blockquote p + cite {
   }
 }
 .contact-list a:hover {
-  color: #62bfe6;
+  color: #f5b747;
 }
 
 .contact-list2 {
@@ -815,12 +859,12 @@ table tr:nth-child(even) {
 }
 .sf-menu > li.sfHover > a, .sf-menu > li > a:hover {
   color: #fff;
-  background: #5ab7de;
+  background: orange;
   border-right: 1px solid #4bb0db;
 }
 .sf-menu > li.active > a {
   color: #fff;
-  background: #5ab7de;
+  background: orange;
   border-right: 1px solid #4bb0db;
 }
 
@@ -842,7 +886,7 @@ table tr:nth-child(even) {
 .sf-menu ul > li > a {
   font-size: 16px;
   padding: 11px 31px;
-  color: #62bfe6;
+  color: #f5b747;
   background: #f5f5f5;
 }
 .sf-menu ul > li + li {
@@ -873,7 +917,7 @@ table tr:nth-child(even) {
   margin-left: -6px;
   content: "";
   font: 400 16px/50px "FontAwesome";
-  color: #62bfe6;
+  color: #f5b747;
 }
 
 @media (max-width: 767px) {
@@ -944,7 +988,7 @@ table tr:nth-child(even) {
   color: #2d2d2d;
 }
 .rd-mobilemenu_ul a:hover {
-  background: #62bfe6;
+  background: #f5b747;
   color: #FFF;
 }
 .rd-mobilemenu_ul a .rd-submenu-toggle {
@@ -1150,7 +1194,7 @@ table tr:nth-child(even) {
 }
 .toTop:hover {
   color: #fff;
-  background: #62bfe6;
+  background: #f5b747;
   text-decoration: none;
 }
 
@@ -1160,7 +1204,7 @@ table tr:nth-child(even) {
   }
 }
 .primary {
-  color: #62bfe6;
+  color: #f5b747;
 }
 
 /*========================================================
@@ -1235,14 +1279,14 @@ main p + a[href^="mailto:"] {
   display: inline-block;
   margin-top: 10px;
   font-size: 16px;
-  color: #62bfe6;
+  color: #f5b747;
 }
 main p + a[href^="mailto:"]:hover {
   text-decoration: underline;
 }
 
 a[href^="callto:"]:hover {
-  color: #62bfe6;
+  color: #f5b747;
 }
 
 .video {

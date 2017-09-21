@@ -189,7 +189,7 @@
   float: right;
   font-size: 56px;
   line-height: 88px;
-  color: #5ab7de;
+  color: #f5b747;
 }
 @media (max-width: 1399px) {
   .camera_caption .row {
@@ -262,7 +262,7 @@
   top: 50%;
   font-family: "FontAwesome";
   font-size: 36px;
-  color: #5ab7de;
+  color: #f5b747;
   cursor: pointer;
   z-index: 10;
   -moz-transform: translateY(-50%);
